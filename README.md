@@ -4,7 +4,7 @@ A simple web project created for my Day 5 Web Development Internship at Veda Tec
 
 ## Live Preview
 
-[Click here to view the website](https://wadityasingh.github.io/day-5-temperature-converter/)
+https://wadityasingh.github.io/day-5-temperature-converter/
 
 ## Features
 

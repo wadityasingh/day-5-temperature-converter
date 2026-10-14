@@ -50,14 +50,14 @@ The other two values update automatically.
 
 Click Reset All to clear the fields.
 
-Colour Design
+## Colour Design
 
 The website uses a light background, dark text, and blue accents for a clean and readable look. Input borders highlight when selected, and error messages appear when an invalid temperature is entered.
 
-Internship Details
+## Internship Details
 
 Organization: Veda Technology
 
 Task: Day 5 – Temperature Converter
 
-Domain: Web Development
+

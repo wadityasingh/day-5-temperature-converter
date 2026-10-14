@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Light Dynamic Body Background */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: #2d5039; 
+  transition: background-color 0.4s ease;
+}
+
+/* Main Box */
+.converter-box {
+  width: 100%;
+  max-width: 460px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 2.2rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.06), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Header */
+.converter-header {
+  text-align: center;
+}
+
+.badge-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  background-color: #dcfce7;
+  color: #15803d;
+  margin-bottom: 0.6rem;
+  transition: all 0.3s ease;
+}
+
+.converter-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.converter-header p {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 0.3rem;
+}
+
+/* Input Fields Container */
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.input-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.input-card label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 0.85rem 3.5rem 0.85rem 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f172a;
+  background-color: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.2s ease;
+  appearance: textfield;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.input-wrapper input:focus {
+  background-color: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.input-wrapper input::-webkit-outer-spin-button,
+.input-wrapper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.unit {
+  position: absolute;
+  right: 1rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #5283c8;
+  pointer-events: none;
+}
+
+/* Error Message */
+.error-msg {
+  display: none;
+  font-size: 0.82rem;
+  color: #f31414;
+  background-color: #ee4d4d;
+  border: 1px solid #be1919;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Reset Button */
+.reset-btn {
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #3b5579;
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reset-btn:hover {
+  background-color: #e2e8f0;
+  color: #0f172a;
+}

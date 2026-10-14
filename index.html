@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body id="page-body">
+  <div class="converter-box">
+    <!-- Header -->
+    <header class="converter-header">
+      <div class="badge-tag" id="status-tag">Normal (Room Temp)</div>
+      <h1>Temperature Converter</h1>
+      <p>Type in any box to convert across scales instantly</p>
+    </header>
+
+    <!-- Inputs Section -->
+    <div class="inputs-container">
+      <!-- Celsius -->
+      <div class="input-card" id="card-c">
+        <label for="celsius">Celsius</label>
+        <div class="input-wrapper">
+          <input 
+            type="number" 
+            id="celsius" 
+            placeholder="0" 
+            step="any"
+            value="25"
+          />
+          <span class="unit">°C</span>
+        </div>
+      </div>
+
+      <!-- Fahrenheit -->
+      <div class="input-card" id="card-f">
+        <label for="fahrenheit">Fahrenheit</label>
+        <div class="input-wrapper">
+          <input 
+            type="number" 
+            id="fahrenheit" 
+            placeholder="32" 
+            step="any"
+            value="77"
+          />
+          <span class="unit">°F</span>
+        </div>
+      </div>
+
+      <!-- Kelvin -->
+      <div class="input-card" id="card-k">
+        <label for="kelvin">Kelvin</label>
+        <div class="input-wrapper">
+          <input 
+            type="number" 
+            id="kelvin" 
+            placeholder="273.15" 
+            step="any"
+            value="298.15"
+          />
+          <span class="unit">K</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Error Alert Message -->
+    <div class="error-msg" id="error-msg"></div>
+
+    <!-- Clear / Reset Button -->
+    <button type="button" id="reset-btn" class="reset-btn">Reset All Values</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
